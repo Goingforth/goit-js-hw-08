@@ -22,6 +22,8 @@ function onFormSubmit(event) {
     localStorage.removeItem(STORAGE_KEY);
     console.log(formData);
     Object.keys(formData).forEach(key => delete formData[key]);
+  } else {
+    alert('Please fill in both fields');
   }
 }
 
